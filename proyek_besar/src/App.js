@@ -2,9 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {IonButton, IonPage, IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem,IonRouterOutlet } from '@ionic/react';
-
+import {Fragment} from 'react';
 function App() {
   return (
+  <Fragment>
     <>
     <IonButton onClick color="primary"> Primary
      <IonPage>
@@ -39,13 +40,15 @@ function App() {
           <IonItem>Menu Item</IonItem>
           <IonItem>Menu Item</IonItem>
         </IonList>
-      </IonContent>
+      </IonContent> 
     </IonMenu>
     <IonRouterOutlet></IonRouterOutlet>
     </IonPage>
     </IonButton>
-  </>
+   </>
+  </Fragment>
   );
 }
+  
 
-export default App;
+
